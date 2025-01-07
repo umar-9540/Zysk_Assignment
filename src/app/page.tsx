@@ -1,23 +1,21 @@
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import zysk_boltshift from "../../assets/zysk_boltshift.svg";
-import zysk_lightbox from "../../assets/zysk_lightbox.svg";
-import zysk_featherdev from "../../assets/zysk_featherdev.svg";
-import zysk_spherule from "../../assets/zysk_spherule.svg";
-import zysk_globalbank from "../../assets/zysk_globalbank.svg";
-import zysk_nietzsche from "../../assets/zysk_nietzsche.svg";
+import Main from "@/components/Main";
+import Companies from "@/components/Companies";
 import Features from "@/components/Features";
 import Sisyphus from "@/components/Sisyphus";
 import Faqs from "@/components/Faqs";
+import Blogposts from "@/components/Blogposts";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
+      <Main />
 
-      <div className="w-40 h-40 border-2 border-red-700 mx-auto">
-        <div className=""></div>
-        {/* <button className="flex flex-row px-1 py-1 border-2 border-red-300 bg-red-50 rounded-full text-red-600 text-sm font-semibold space-x-3 items-center">
+      {/* <div className="w-40 h-40 border-2 border-red-700 mx-auto">
+        <div className=""></div></div> */}
+      {/* <button className="flex flex-row px-1 py-1 border-2 border-red-300 bg-red-50 rounded-full text-red-600 text-sm font-semibold space-x-3 items-center">
           <div className="px-2 border-2 border-red-300 bg-white rounded-full">
             New feature
           </div>
@@ -42,24 +40,14 @@ export default function Home() {
           </button>
         </div> */}
 
-        {/* <img src="/zysk_assignment" alt="zysk_image 1" /> */}
-      </div>
+      {/* <img src="/zysk_assignment" alt="zysk_image 1" /> */}
 
-      <div className="text-center">
-        <div className="text-sm">Join 4,000+ companies already growing</div>
-        <div className="flex items-center justify-center space-x-6 mt-4">
-          <Image src={zysk_boltshift} alt="boltshift" className="w-36" />
-          <Image src={zysk_lightbox} alt="lightbox" className="w-36" />
-          <Image src={zysk_featherdev} alt="featherdev" className="w-36" />
-          <Image src={zysk_spherule} alt="spherule" className="w-36" />
-          <Image src={zysk_globalbank} alt="globalbank" className="w-36" />
-          <Image src={zysk_nietzsche} alt="nietzsche" className="w-36" />
-        </div>
-      </div>
-
+      <Companies />
       <Features />
       <Sisyphus />
       <Faqs />
+      <Blogposts />
+      <Footer />
     </div>
   );
 }
