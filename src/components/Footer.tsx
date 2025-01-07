@@ -11,7 +11,7 @@ const Footer = () => {
         <p className="mt-5 text-lg text-gray-600">
           Join over 4,000+ startups already growing with Untitled.
         </p>
-        <div className="mt-7 flex justify-center gap-3">
+        <div className="mt-7 flex flex-col-reverse mx-4 md:flex-row justify-center gap-3">
           <button className="px-4 py-2 border border-gray-300 rounded-md text-gray-800 hover:bg-gray-100 shadow">
             Learn more
           </button>
@@ -395,11 +395,11 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="bg-gray-50 px-14 py-4 flex items-center justify-between">
+        <div className="bg-gray-50 px-6 md:flex md:px-14 py-4 items-center justify-between">
           <div>
             <Image src={zysk_logo} alt="logo" />
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-500 my-6">
             © 2077 zysktechnologies. All rights reserved.
           </div>
         </div>

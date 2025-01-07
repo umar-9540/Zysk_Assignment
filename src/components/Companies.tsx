@@ -9,15 +9,25 @@ import zysk_nietzsche from "../../assets/zysk_nietzsche.svg";
 
 const Companies = () => {
   return (
-    <div className="text-center">
-      <div className="text-sm">Join 4,000+ companies already growing</div>
-      <div className="flex items-center justify-center space-x-6 mt-4">
-        <Image src={zysk_boltshift} alt="boltshift" className="w-36" />
-        <Image src={zysk_lightbox} alt="lightbox" className="w-36" />
-        <Image src={zysk_featherdev} alt="featherdev" className="w-36" />
-        <Image src={zysk_spherule} alt="spherule" className="w-36" />
-        <Image src={zysk_globalbank} alt="globalbank" className="w-36" />
-        <Image src={zysk_nietzsche} alt="nietzsche" className="w-36" />
+    <div className="text-center mt-10 mb-20">
+      <div className="text-sm text-gray-600">
+        Join 4,000+ companies already growing
+      </div>
+      <div className="flex flex-wrap items-center justify-center space-x-6 mt-4">
+        <Image src={zysk_boltshift} alt="boltshift" className="w-32 md:w-36" />
+        <Image src={zysk_lightbox} alt="lightbox" className="w-32 md:w-36" />
+        <Image
+          src={zysk_featherdev}
+          alt="featherdev"
+          className="w-32 md:w-36"
+        />
+        <Image src={zysk_spherule} alt="spherule" className="w-32 md:w-36" />
+        <Image
+          src={zysk_globalbank}
+          alt="globalbank"
+          className="w-32 md:w-36"
+        />
+        <Image src={zysk_nietzsche} alt="nietzsche" className="w-32 md:w-36" />
       </div>
     </div>
   );

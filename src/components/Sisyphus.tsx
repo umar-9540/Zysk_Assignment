@@ -14,8 +14,8 @@ const Sisyphus = () => {
           </div>
         </div>
 
-        <p className="text-2xl font-semibold text-gray-800 sm:text-3xl mb-6">
-          We’ve been using Untitled to kick start every new project and can’t
+        <p className="text-2xl mx-5 font-semibold text-gray-800 sm:text-3xl mb-6">
+          We&apos;ve been using Untitled to kick start every new project and can&apos;t
           imagine working without it.
         </p>
 

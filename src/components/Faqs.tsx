@@ -50,10 +50,10 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto px-4">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-gray-900 mx-5">
             Frequently asked questions
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 mt-4 mx-4">
             Everything you need to know about the product and billing.
           </p>
         </div>
@@ -66,7 +66,7 @@ const FAQ = () => {
               className="border-b-2 border-gray-100 overflow-hidden"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-4 text-left text-gray-900 font-bold focus:outline-none"
+                className="w-full flex justify-between items-center sm:px-6 py-4 text-left text-gray-900 font-bold focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
                 <span>{faq.question}</span>
@@ -79,7 +79,9 @@ const FAQ = () => {
                 </span>
               </button>
               {openIndex === index && (
-                <div className="px-6 py-4 text-gray-500 font-medium">{faq.answer}</div>
+                <div className="px-6 py-4 text-gray-500 font-medium">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}
@@ -110,7 +112,7 @@ const FAQ = () => {
             Can&apos;t find the answer you&apos;re looking for? Please chat to
             our friendly team.
           </p>
-          <button className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+          <button className="mt-5 px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
             Get in touch
           </button>
         </div>
