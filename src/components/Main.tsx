@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <main className="flex-grow">
       <div className="max-w-7xl mx-auto px-6 items-center py-16 text-center">
-        <div className="flex w-[260px] md:w-[325px] mx-auto gap-2 md:gap-4 py-1 mb-4 items-center bg-red-50 border border-red-500 rounded-full hover:bg-red-100">
-          <div className="bg-white text-red-600 text-[11px] md:text-sm ml-1 font-medium px-1 py-0.5 border border-red-500 rounded-full">
+        <div className="flex w-[260px] md:w-[325px] mx-auto gap-2 md:gap-4 py-1 mb-4 items-center bg-red-50 border border-purple-400 md:border-red-500 rounded-full hover:bg-red-100">
+          <div className="bg-white text-red-600 text-[11px] md:text-sm ml-1 font-medium px-1 py-0.5 border border-purple-400 md:border-red-500 rounded-full">
             New feature
           </div>
           <a
@@ -34,7 +34,7 @@ const Main = () => {
           <button className="px-6 py-3 bg-red-500 text-white font-semibold rounded-full hover:bg-red-600">
             Sign up
           </button>
-          <button className="flex items-center gap-1 px-6 py-3 border border-gray-300 shadow text-gray-800 font-semibold rounded-full hover:bg-gray-100">
+          <button className="flex items-center justify-center gap-1 px-6 py-3 border border-gray-300 shadow text-gray-800 font-semibold rounded-full hover:bg-gray-100">
             <Image src={demo} alt="icon" width={22} />
             Demo
           </button>

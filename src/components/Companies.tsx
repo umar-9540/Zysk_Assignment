@@ -9,8 +9,8 @@ import zysk_nietzsche from "../../assets/zysk_nietzsche.svg";
 
 const Companies = () => {
   return (
-    <div className="text-center">
-      <div className="mt-20 text-sm text-gray-600">
+    <div className="text-center border-2 border-white">
+      <div className="mt-24 text-sm text-gray-600">
         Join 4,000+ companies already growing
       </div>
       <div className="flex flex-wrap mb-20 items-center justify-center space-x-6 mt-4">
