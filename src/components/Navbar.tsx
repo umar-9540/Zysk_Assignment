@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import zysk_logo from "..//..//assets/zysk_logo.svg";
-import zysk_profile from "..//..//assets/zysk_profile.jpeg";
+import avatar2 from "..//..//assets/Avatar2.svg";
+import down_arrow from "../../assets/down_arrow.svg";
 
 const Navbar = () => {
   return (
@@ -12,15 +13,17 @@ const Navbar = () => {
             <Image src={zysk_logo} alt="Zysk Logo" width={80} />
           </div>
 
-          <nav className="hidden md:flex space-x-8 text-gray-600">
+          <nav className="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
             <a href="#" className="hover:text-gray-900">
               Home
             </a>
-            <a href="#" className="hover:text-gray-900">
+            <a href="#" className="flex gap-1 hover:text-gray-900">
               Products
+              <Image src={down_arrow} alt="icon" width={22} />
             </a>
-            <a href="#" className="hover:text-gray-900">
+            <a href="#" className="flex gap-1 hover:text-gray-900">
               Resources
+              <Image src={down_arrow} alt="icon" width={22} />
             </a>
             <a href="#" className="hover:text-gray-900">
               Pricing
@@ -30,7 +33,7 @@ const Navbar = () => {
 
         <div className="hidden md:block rounded-full w-10 h-10 overflow-hidden">
           <Image
-            src={zysk_profile}
+            src={avatar2}
             alt="Profile Picture"
             width={256}
             height={256}

@@ -7,7 +7,6 @@ const Sisyphus = () => {
   return (
     <section className="bg-white py-16">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Logo */}
         <div className="flex justify-center items-center mb-6">
           <div className="flex items-center space-x-2">
             <Image src={zysk_sisyphus} alt="sisyphus" />
@@ -15,8 +14,8 @@ const Sisyphus = () => {
         </div>
 
         <p className="text-2xl mx-5 font-semibold text-gray-800 sm:text-3xl mb-6">
-          We&apos;ve been using Untitled to kick start every new project and can&apos;t
-          imagine working without it.
+          We&apos;ve been using Untitled to kick start every new project and
+          can&apos;t imagine working without it.
         </p>
 
         <div className="flex flex-col items-center space-y-4">

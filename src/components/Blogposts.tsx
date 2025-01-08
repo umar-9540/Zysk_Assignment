@@ -1,9 +1,11 @@
 import React from "react";
-import blog1 from "../../assets/blog1.webp";
-import blog2 from "../../assets/blog2.jpg";
-import blog3 from "../../assets/blog3.jpg";
-import zysk_profile from "../../assets/zysk_profile.jpeg";
-import diagonal_arrow from "../../assets/diagonal_arrow.svg"
+import blog1 from "../../assets/blog1.svg";
+import blog2 from "../../assets/blog2.svg";
+import blog3 from "../../assets/blog3.svg";
+import avatar1 from "../../assets/Avatar1.svg";
+import avatar2 from "../../assets/Avatar2.svg";
+import avatar3_blog from "../../assets/Avatar3_blog.svg";
+import diagonal_arrow from "../../assets/diagonal_arrow.svg";
 import Image from "next/image";
 
 const Blogposts = () => {
@@ -14,6 +16,7 @@ const Blogposts = () => {
       description:
         "How do you create compelling presentations that wow your colleagues and impress your managers?",
       author: "Olivia Rhye",
+      profile: avatar2,
       date: "20 Jan 2024",
       image: blog1,
     },
@@ -23,6 +26,7 @@ const Blogposts = () => {
       description:
         "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
       author: "Phoenix Baker",
+      profile: avatar1,
       date: "19 Jan 2024",
       image: blog2,
     },
@@ -32,13 +36,14 @@ const Blogposts = () => {
       description:
         "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
       author: "Lana Steiner",
+      profile: avatar3_blog,
       date: "18 Jan 2024",
       image: blog3,
     },
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="sm:flex justify-between mb-8">
           <div>
@@ -77,17 +82,17 @@ const Blogposts = () => {
                     {post.category}
                   </p>
                   <div className="flex items-center justify-between">
-                  <h4 className="text-lg font-bold mt-2 text-gray-900">
-                    {post.title}
-                  </h4>
-                  <Image src={diagonal_arrow} alt="" width={24} height={24}/>
+                    <h4 className="text-lg font-bold mt-2 text-gray-900">
+                      {post.title}
+                    </h4>
+                    <Image src={diagonal_arrow} alt="" width={24} height={24} />
                   </div>
                   <p className="text-sm text-gray-600 mt-2">
                     {post.description}
                   </p>
                   <div className="flex items-center mt-4">
                     <Image
-                      src={zysk_profile}
+                      src={post.profile}
                       alt={post.author}
                       className="w-8 h-8 rounded-full"
                     />

@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import zysk_profile from "../../assets/zysk_profile.jpeg";
+import avatar1 from "../../assets/Avatar1.svg";
+import avatar2 from "../../assets/Avatar2.svg";
+import avatar3 from "../../assets/Avatar3.svg";
 import zysk_plus from "../../assets/zysk_plus1.svg";
 import zysk_minus from "../../assets/zysk_minus1.svg";
 
@@ -48,7 +50,6 @@ const FAQ = () => {
   return (
     <section className="bg-white py-16">
       <div className="max-w-4xl mx-auto px-4">
-        {/* Header */}
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mx-5">
             Frequently asked questions
@@ -58,7 +59,6 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* FAQ Items */}
         <div className="mt-8 space-y-4">
           {faqs.map((faq, index) => (
             <div
@@ -88,21 +88,27 @@ const FAQ = () => {
         </div>
 
         <div className="mt-12 bg-gray-50 p-6 rounded-lg text-center">
-          <div className="flex justify-center -space-x-2 mb-4">
+          <div className="flex justify-center items-end -space-x-4 mb-4">
             <Image
-              src={zysk_profile}
-              alt=""
-              className="w-10 h-10 rounded-full border-2 border-white"
+              src={avatar1}
+              alt="avatar1"
+              width={48}
+              height={48}
+              className="w-12 h-12 rounded-full border border-white z-10"
             />
             <Image
-              src={zysk_profile}
-              alt=""
-              className="w-12 h-12 rounded-full border-2 border-white"
+              src={avatar2}
+              alt="avatar2"
+              width={56}
+              height={56}
+              className="w-14 h-14 rounded-full z-20"
             />
             <Image
-              src={zysk_profile}
-              alt=""
-              className="w-10 h-10 rounded-full border-2 border-white"
+              src={avatar3}
+              alt="avatar3"
+              width={48}
+              height={48}
+              className="w-12 h-12 rounded-full border border-white z-10"
             />
           </div>
           <h3 className="text-lg font-semibold text-gray-900">

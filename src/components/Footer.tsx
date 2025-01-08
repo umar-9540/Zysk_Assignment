@@ -5,7 +5,6 @@ import zysk_logo from "../../assets/zysk_logo.svg";
 const Footer = () => {
   return (
     <div className="flex flex-col items-center bg-gray-50 text-gray-800">
-      {/* Top Section */}
       <section className="w-full py-16 text-center">
         <h1 className="text-3xl font-bold">Start your free trial</h1>
         <p className="mt-5 text-lg text-gray-600">
@@ -21,7 +20,6 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
       <footer className="w-full bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-6 gap-8 py-10 px-6 text-gray-600 font-bold">
           {/* Product */}
@@ -53,7 +51,7 @@ const Footer = () => {
                   className="hover:underline"
                 >
                   Solutions{" "}
-                  <span className="text-green-700 text-xs font-medium border border-green-300 bg-green-50 rounded-full px-1.5 py-0.5">
+                  <span className="text-green-700 text-xs font-medium border border-green-300 bg-green-50 rounded-full px-1.5 py-0.5 hover:no-underline">
                     New
                   </span>
                 </a>
@@ -394,7 +392,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="bg-gray-50 px-6 md:flex md:px-14 py-4 items-center justify-between">
           <div>
             <Image src={zysk_logo} alt="logo" />
