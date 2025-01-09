@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import zysk_image1 from "../../assets/zysk_image 1.svg";
-import arrow from "../../assets/arrow.svg";
 import demo from "../../assets/demo.svg";
+import { GoArrowRight } from "react-icons/go";
 
 const Main = () => {
   return (
@@ -14,10 +14,10 @@ const Main = () => {
           </div>
           <a
             href="#"
-            className="flex gap-1 text-[11px] md:text-sm text-red-600 font-medium"
+            className="flex gap-1 text-[11px] md:text-sm items-center text-red-600 font-medium"
           >
             Check out the team dashboard
-            <Image src={arrow} alt="→" width={16} />
+            <GoArrowRight className="w-4 h-5 text-purple-600 md:text-red-600" />
           </a>
         </div>
 
