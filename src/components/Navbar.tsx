@@ -5,14 +5,17 @@ import React, { useState } from "react";
 import zysk_logo from "..//..//assets/zysk_logo.svg";
 import avatar2 from "..//..//assets/Avatar2.svg";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
+import { FiMenu } from "react-icons/fi";
+import Menu from "./Menu";
 
 const Navbar = () => {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="w-full">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-12">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6 md:px-12">
         <div className="flex flex-row gap-16">
           <div>
             <Image src={zysk_logo} alt="Zysk Logo" width={80} />
@@ -76,23 +79,15 @@ const Navbar = () => {
           />
         </div>
 
-        <button className="md:hidden text-gray-600">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-gray-600"
+        >
+          <FiMenu className="h-6 w-6" />
         </button>
+        
       </div>
+      <Menu isOpen={isMenuOpen} />
     </header>
   );
 };

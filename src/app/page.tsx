@@ -6,11 +6,13 @@ import Sisyphus from "@/components/Sisyphus";
 import Faqs from "@/components/Faqs";
 import Blogposts from "@/components/Blogposts";
 import Footer from "@/components/Footer";
+import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
+      <Menu />
       <Main />
       <Companies />
       <Features />
